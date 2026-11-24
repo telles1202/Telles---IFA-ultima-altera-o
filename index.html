@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piscina CEP - Relatório Técnico</title>
+  
+  <!-- Fonte Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Ícones FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-layout">
+    
+    <!-- PAINEL LATERAL ESQUERDO (NAVEGAÇÃO) -->
+    <aside class="painel-esquerdo">
+      <div class="brand">
+        <i class="fa-solid fa-water brand-icon"></i>
+        <span>Piscina<strong>CEP</strong></span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <i class="fa-solid fa-house"></i>
+          <span>Início</span>
+        </a>
+        <a href="#dificuldades" class="nav-item">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span>Dificuldades</span>
+        </a>
+        <a href="#termodinamica" class="nav-item">
+          <i class="fa-solid fa-temperature-half"></i>
+          <span>Perda e Ganho de Calor</span>
+        </a>
+        <a href="#girassol" class="nav-item">
+          <i class="fa-solid fa-sun"></i>
+          <span>Sistema Girassol</span>
+        </a>
+        <a href="#orcamento" class="nav-item">
+          <i class="fa-solid fa-coins"></i>
+          <span>Orçamento & Retorno</span>
+        </a>
+        <a href="#video-secao" class="nav-item">
+          <i class="fa-solid fa-play"></i>
+          <span>Vídeo Demonstrativo</span>
+        </a>
+        <a href="#equipe" class="nav-item active">
+          <i class="fa-solid fa-code"></i>
+          <span>Desenvolvedores</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <p>Projeto de Eficiência Energética CEP &copy; 2026</p>
+      </div>
+    </aside>
+
+    <!-- PAINEL PRINCIPAL DIREITO -->
+    <main class="painel-direito">
+      
+      <header class="header-relatorio">
+        <span class="badge">Relatório Técnico</span>
+        <h1>Estudo de Viabilidade Térmica</h1>
+        <p class="subtitulo-relatorio">Análise de retenção de temperatura e projeção financeira para a piscina do colégio.</p>
+      </header>
+
+      <hr class="divisor">
+
+      <!-- SEÇÃO 1: DIFICULDADES E ESCOLHA DA LONA PRETA -->
+      <section id="dificuldades" class="secao-conteudo">
+        <h2><i class="fa-solid fa-circle-nodes"></i> Desafios Identificados e Escolha do Material</h2>
+        <p class="texto-destaque">
+          Nesta etapa, apresentamos os gargalos térmicos identificados e as estratégias propostas para solucioná-los dentro de um orçamento viável, respeitando as diretrizes de preservação do patrimônio histórico do colégio.
+        </p>
+
+        <article class="bloco-analise">
+          <h3>Por que Optar pela Lona Térmica Preta?</h3>
+          <p>
+            A perda de calor em piscinas ocorre principalmente por evaporação, dissipação ambiente e ação do vento. Além de atuar como barreira física contra a evaporação noturna, a equipe optou especificamente pela <strong>lona térmica na cor preta</strong> devido às suas propriedades ópticas e termodinâmicas.
+          </p>
+          <p style="margin-top: 12px;">
+            Diferente das lonas transparentes ou azul-claras (que permitem a passagem da luz solar para o fundo da piscina, mas refletem parte da radiação), o material preto possui um <strong>baixo albedo</strong> (baixo índice de reflexão), absorvendo praticamente todo o espectro da radiação solar visível e infravermelha que incide sobre a superfície.
+          </p>
+          
+          <figure class="container-imagem">
+            <img src="fotos/aquecimentodapiscina.png" alt="Esquema explicativo da piscina aquecida">
+            <figcaption>Figura 1: Projeção de retenção e absorção de calor com cobertura térmica preta.</figcaption>
+          </figure>
+
+          <p>
+            Com isso, a própria lona se aquece rapidamente sob o sol e transfere essa energia térmica diretamente para a camada superior da água por <strong>condução</strong>, trabalhando em conjunto com o sistema de aquecimento solar modular do tipo Girassol.
+          </p>
+        </article>
+      </section>
+
+      <!-- SEÇÃO: FÍSICA DO GANHO E PERDA DE CALOR -->
+      <section id="termodinamica" class="secao-conteudo">
+        <h2><i class="fa-solid fa-temperature-half"></i> Física Térmica: Ganho e Perda de Calor</h2>
+        
+        <article class="bloco-analise">
+          <p>
+            O comportamento térmico de uma piscina de <strong>1.070 m²</strong> depende do balanço energético entre o calor absorvido durante o período de insolação e o calor dissipado para a atmosfera. Como a água possui um elevado <strong>calor específico</strong> (1 cal/g·°C ou 4.186 J/kg·°C), ela exige grande quantidade de energia para elevar sua temperatura, mas também funciona como um excelente acumulador térmico quando isolada corretamente.
+          </p>
+
+          <h3 style="margin-top: 24px;">1. Como Ocorre o Ganho de Calor (Aquecimento)</h3>
+          <ul style="margin-left: 20px; margin-bottom: 20px; line-height: 1.75;">
+            <li>
+              <strong>Absorção pela Lona Térmica Preta (Corpo Negro Aproximado):</strong> Superfícies escuras absorvem cerca de <strong>90% a 95% da radiação solar incidente</strong>, convertendo energia luminosa em calor na própria estrutura da lona. Como as bolhas de ar da lona estão em contato direto com a lâmina d'água, esse calor é conduzido para a piscina ao longo do dia.
+            </li>
+            <li>
+              <strong>Convecção Forçada via Coletores (Sistema Girassol):</strong> A água é bombeada em circuito fechado pelas placas absorvedoras escuras expostas ao sol no telhado. O calor captado por condução nos coletores é transferido para a água e devolvido à piscina, homogeneizando a temperatura em todo o volume do tanque.
+            </li>
+            <li>
+              <strong>Bloqueio da Proliferação de Algas:</strong> Como benefício secundário da opção pela lona preta, o bloqueio total da passagem de luz solar impede a fotossíntese no interior da água, reduzindo o consumo de cloro e produtos químicos para manutenção.
+            </li>
+          </ul>
+
+          <h3>2. Como Ocorre a Perda de Calor (Resfriamento)</h3>
+          <p>
+            Durante a noite ou em dias frios e com vento, a diferença de temperatura entre a água aquecida e o ambiente externo ativa quatro mecanismos simultâneos de perda energética:
+          </p>
+
+          <div class="container-tabela" style="margin-top: 16px;">
+            <table class="tabela-orcamento">
+              <thead>
+                <tr>
+                  <th>Mecanismo Físico</th>
+                  <th>Parcela da Perda</th>
+                  <th>Explicação Técnica</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Evaporação (Calor Latente)</strong></td>
+                  <td><strong>~70%</strong></td>
+                  <td>É o principal fator de resfriamento. Para cada 1 litro de água que evapora na superfície, a piscina perde cerca de <strong>540 kcal</strong>. Quanto menor a umidade relativa do ar e maior a velocidade do vento, maior a evaporação.</td>
+                </tr>
+                <tr>
+                  <td><strong>Radiação Térmica (Ondas Longas)</strong></td>
+                  <td><strong>~20%</strong></td>
+                  <td>À noite, a massa de água aquecida emite radiação infravermelha diretamente para a atmosfera fria. Em noites de céu limpo (sem cobertura de nuvens), essa perda radiativa é ainda mais acentuada.</td>
+                </tr>
+                <tr>
+                  <td><strong>Convecção pelo Ar e Vento</strong></td>
+                  <td><strong>~7% a 10%</strong></td>
+                  <td>A camada de ar frio em contato direto com a água absorve calor e sobe por diferença de densidade, sendo substituída por ar frio. Rajadas de vento aceleram continuamente essa troca térmica.</td>
+                </tr>
+                <tr>
+                  <td><strong>Condução pelas Paredes e Fundo</strong></td>
+                  <td><strong>~1% a 3%</strong></td>
+                  <td>Transferência direta de energia térmica da água através da estrutura de concreto para o solo circundante. É a parcela menos significativa, pois a terra atua como isolante natural.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="texto-destaque" style="margin-top: 20px;">
+            <strong>Síntese Técnica:</strong> A escolha da <strong>lona térmica preta</strong> oferece dupla função: durante o dia, maximiza a absorção solar na superfície (complementando o Sistema Girassol) e inibe a fotossíntese de algas; durante a noite, bloqueia os <strong>~90% de perda superficial</strong> (evaporação + radiação infravermelha), garantindo a economia estimada de ~R$ 1.700 por noite. <em>(Nota operacional: recomenda-se manter a bomba de filtração/circulação ativa nos horários de sol intenso para distribuir o calor absorvido pela lona preta para o fundo da piscina).</em>
+          </p>
+        </article>
+      </section>
+
+      <!-- SEÇÃO 2: SISTEMA GIRASSOL -->
+      <section id="girassol" class="secao-conteudo">
+        <h2><i class="fa-solid fa-sun"></i> Sistema Solar Girassol</h2>
+        <article class="bloco-analise">
+          <p>O sistema consiste no aproveitamento da radiação solar incidente no telhado da instituição por meio de um circuito fechado de mangueiras de alta absorção térmica, reduzindo sensivelmente a demanda por energia elétrica/gás.</p>
+          
+          <figure class="container-imagem">
+            <img src="fotos/solar.jpg" alt="Painel do sistema de aquecimento solar girassol">
+            <figcaption>Figura 2: Disposição do sistema coletor solar.</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <!-- SEÇÃO 3: CUSTOS E ORÇAMENTO -->
+      <section id="orcamento" class="secao-conteudo">
+        <h2><i class="fa-solid fa-chart-line"></i> Projeção Orçamentária e ROI</h2>
+
+        <div class="grid-cards">
+          
+          <div class="card-metrica">
+            <div class="card-header">
+              <i class="fa-solid fa-shield-halved"></i>
+              <h4>Lona Térmica</h4>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li><span>Área total:</span> <strong>1.070 m²</strong></li>
+                <li><span>Valor por m²:</span> <strong>R$ 80 a R$ 150</strong></li>
+                <li class="destaque-valor"><span>Custo estimado:</span> <strong>R$ 85k - R$ 160k</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card-metrica">
+            <div class="card-header">
+              <i class="fa-solid fa-gears"></i>
+              <h4>Automação e Manutenção</h4>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li><span>Enrolador manual/auto:</span> <strong>R$ 10k - R$ 40k</strong></li>
+                <li><span>Vida útil estimada:</span> <strong>3 a 5 anos</strong></li>
+                <li><span>Manutenção/ano:</span> <strong>até R$ 5.000</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card-metrica destaque">
+            <div class="card-header">
+              <i class="fa-solid fa-piggy-bank"></i>
+              <h4>Retorno (ROI)</h4>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li><span>Economia noturna:</span> <strong>~ R$ 1.700 / noite</strong></li>
+                <li class="destaque-valor positivo"><span>Payback estimado:</span> <strong>1 a 2 meses</strong></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- TABELA DE ORÇAMENTO DETALHADA DO SISTEMA GIRASSOL -->
+        <div class="container-tabela">
+          <h3>Orçamento Detalhado: Sistema Solar Girassol</h3>
+          <table class="tabela-orcamento">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Especificação / Descrição</th>
+                <th>Qtd / Área</th>
+                <th>Custo Estimado (R$)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Placas Coletoras (Girassol)</strong></td>
+                <td>Coletores solares de polímero para piscina</td>
+                <td>1.000m² - 1.200m²</td>
+                <td>R$ 120.000,00 – R$ 180.000,00</td>
+              </tr>
+              <tr>
+                <td><strong>Bomba de Circulação</strong></td>
+                <td>Motobomba para o circuito solar</td>
+                <td>2 a 3 un.</td>
+                <td>R$ 6.000,00 – R$ 12.000,00</td>
+              </tr>
+              <tr>
+                <td><strong>Tubulação e Conexões</strong></td>
+                <td>Tubos PVC/CPVC, válvulas e fixadores</td>
+                <td>Lote completo</td>
+                <td>R$ 15.000,00 – R$ 25.000,00</td>
+              </tr>
+              <tr>
+                <td><strong>Automação e Sensores</strong></td>
+                <td>Controlador digital de temperatura</td>
+                <td>1 kit</td>
+                <td>R$ 2.500,00 – R$ 5.000,00</td>
+              </tr>
+              <tr>
+                <td><strong>Mão de Obra e Instalação</strong></td>
+                <td>Montagem no telhado e testes hidráulicos</td>
+                <td>Serviço esp.</td>
+                <td>R$ 20.000,00 – R$ 35.000,00</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="linha-total">
+                <td colspan="3"><strong>Total Estimado (Sistema Girassol)</strong></td>
+                <td><strong>R$ 163.500,00 – R$ 257.000,00</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- RESUMO COMBINADO DO INVESTIMENTO -->
+        <div class="caixa-resumo-total">
+          <div class="resumo-header">
+            <i class="fa-solid fa-calculator"></i>
+            <h3>Investimento Total Combinado do Projeto</h3>
+          </div>
+          <div class="resumo-body">
+            <div class="resumo-item">
+              <span>Lona Térmica + Enrolador:</span>
+              <strong>R$ 95.000,00 a R$ 200.000,00</strong>
+            </div>
+            <div class="resumo-item">
+              <span>Sistema Solar Girassol:</span>
+              <strong>R$ 163.500,00 a R$ 257.000,00</strong>
+            </div>
+            <hr>
+            <div class="resumo-item total">
+              <span>Investimento Total Estimado:</span>
+              <strong class="valor-destaque-total">R$ 258.500,00 a R$ 457.000,00</strong>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- SEÇÃO 4: VÍDEO DEMONSTRATIVO (ARQUIVO LOCAL) -->
+      <section id="video-secao" class="secao-conteudo">
+        <h2><i class="fa-solid fa-play"></i> Vídeo Demonstrativo</h2>
+        <div class="container-video">
+          <div class="wrapper-video">
+            <video controls style="width: 100%; height: 100%; object-fit: cover;">
+              <source src="video.mp4.crswap.mp4" type="video/mp4">
+              Seu navegador não suporta a exibição deste vídeo.
+            </video>
+          </div>
+          <p class="legenda-video">Assista à explicação detalhada sobre o funcionamento e instalação do sistema.</p>
+        </div>
+      </section>
+
+      <!-- SEÇÃO 5: INTEGRANTES / PROGRAMADORES -->
+      <section id="equipe" class="secao-conteudo">
+        <h2><i class="fa-solid fa-users"></i> Equipe de Programação</h2>
+        <p>Integrantes responsáveis pelo desenvolvimento, estrutura e estilização do projeto:</p>
+
+        <div class="grid-integrantes">
+          <div class="card-integrante">
+            <div class="avatar-integrante">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h4>Eduardo Telles</h4>
+            <span>Desenvolvedor</span>
+          </div>
+
+          <div class="card-integrante">
+            <div class="avatar-integrante">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h4>Antony</h4>
+            <span>Desenvolvedor</span>
+          </div>
+
+          <div class="card-integrante">
+            <div class="avatar-integrante">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h4>Guilherme</h4>
+            <span>Desenvolvedor</span>
+          </div>
+
+          <div class="card-integrante">
+            <div class="avatar-integrante">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h4>Davi</h4>
+            <span>Desenvolvedor</span>
+          </div>
+
+          <div class="card-integrante">
+            <div class="avatar-integrante">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h4>Boas</h4>
+            <span>Desenvolvedor</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
